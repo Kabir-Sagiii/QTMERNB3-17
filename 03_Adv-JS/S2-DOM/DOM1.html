@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeContent() {
+        var h1DomElement = document.querySelector("h1");
+        var pDOMElement = document.querySelector("p");
+
+        h1DomElement.innerText = "Hello JS";
+        pDOMElement.innerText = "JS is very very easy";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Welcome to JS !!!</h1>
+    <p>Javascript is a Programming Language</p>
+    <button onclick="changeContent()">Change h1 Content</button>
+  </body>
+</html>
