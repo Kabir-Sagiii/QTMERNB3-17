@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function getPropertyCount() {
+        var obj = { name: "s1", city: "c1" };
+        var h2DomElement = document.querySelector("h2");
+        var pDOM = document.querySelector("p");
+        // var count = Object.keys(document).length;
+        var count = 0;
+        for (let key in pDOM) {
+          console.log(key);
+          count++;
+        }
+        console.log(count);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2 class="title">Total Property Count</h2>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, et?
+    </p>
+    <button onclick="getPropertyCount()">Change Para</button>
+  </body>
+</html>
