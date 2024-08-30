@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function showHidePassword() {
+        var inputDomElement = document.querySelector("input");
+        var buttonDomElement = document.querySelector("button");
+
+        var typeValue = inputDomElement.type;
+        if (typeValue == "password") {
+          inputDomElement.type = "text";
+          buttonDomElement.innerText = "Hide Password";
+        } else {
+          inputDomElement.type = "password";
+          buttonDomElement.innerText = "Show Password";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Show/Hide Password</h2>
+
+    <input type="password" placeholder="Enter Password" />
+
+    <button onclick="showHidePassword()">Show Password</button>
+  </body>
+</html>
