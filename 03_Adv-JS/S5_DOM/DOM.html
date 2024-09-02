@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Selection Function</title>
+    <script>
+      function geth2Dom() {
+        document.getElementById("title").innerText = "Document Object Model";
+        document.getElementById("title").style.color = "red";
+
+        var pDomCollection = document.getElementsByClassName("p1");
+        console.log(pDomCollection[0]);
+        pDomCollection[0].style.color = "green";
+
+        var btnDOMCollection = document.getElementsByTagName("button");
+        btnDOMCollection[0].style.color = "blue";
+
+        var pCollection = document.getElementsByName("para1");
+        pCollection[0].style.backgroundColor = "black";
+        pCollection[0].style.padding = "20px";
+        pCollection[0].style.color = "white";
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="title">DOM</h2>
+    <p name="para1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste tenetur
+      nemo ex saepe voluptatum accusamus officiis cumque aliquid illo dolorum.
+    </p>
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+      tempore ea modi in veritatis ab dolores. Corrupti et eius neque sunt illum
+      aliquam assumenda excepturi libero vel! Saepe autem laborum, consectetur
+      placeat deleniti tempora eligendi earum illum voluptas, voluptatum, itaque
+      nobis ut. Facilis, amet consectetur distinctio, eius eos accusantium
+      laborum atque autem illum ab unde assumenda enim excepturi deserunt ad
+      nisi repellendus architecto asperiores rerum consequatur nihil magni
+      beatae est? Facere omnis quasi impedit voluptate necessitatibus delectus.
+      Quam earum minus temporibus dolor porro soluta id rem sed repellendus,
+      recusandae placeat blanditiis molestias ab veniam ad sint? Eaque deserunt
+      harum explicabo!
+    </p>
+    <button onclick="geth2Dom()">Get h2</button>
+  </body>
+</html>

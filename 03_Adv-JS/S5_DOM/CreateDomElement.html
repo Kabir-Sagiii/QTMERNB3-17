@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createMyDomElement() {
+        var h1DomElement = document.createElement("h1");
+        h1DomElement.innerText = "New h1 Element";
+
+        var pDomElement = document.createElement("p");
+        pDomElement.innerText = "Hello its new Para";
+
+        var imgDomElement = document.createElement("img");
+        imgDomElement.src =
+          "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1";
+        imgDomElement.width = "500";
+        imgDomElement.height = "300";
+
+        var divDomElement = document.querySelector("div");
+
+        divDomElement.appendChild(h1DomElement);
+        divDomElement.appendChild(pDomElement);
+        divDomElement.appendChild(imgDomElement);
+      }
+
+      function removeImage() {
+        var imgDomElement = document.querySelector("img");
+        var h1DomElement = document.querySelector("h1");
+
+        var pDomElement = document.querySelectorAll("p");
+
+        pDomElement[1].remove();
+        imgDomElement.remove();
+        h1DomElement.remove();
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h2>Create New Dom Element</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id natus,
+        quisquam vero animi quod minima pariatur a. Expedita blanditiis itaque
+        consectetur. Deserunt aperiam id soluta velit molestias tempora mollitia
+        nulla, atque ipsam ratione rerum maxime molestiae! Dolorum inventore
+        esse, iusto consequuntur, at delectus exercitationem, eius provident
+        quod corrupti consequatur. Voluptatem veritatis laborum rem inventore ea
+        modi magnam tenetur explicabo porro nulla assumenda, quod consequatur
+        quidem ad nisi vero iusto illo, aliquid sint aliquam obcaecati, beatae
+        at deserunt. Earum, quas ipsam laudantium quos, exercitationem eligendi
+        veniam inventore impedit quis delectus mollitia amet maxime natus hic
+        dignissimos, eius voluptas. Ipsa, quam asperiores.
+      </p>
+      <button onclick="createMyDomElement()">Create DOM</button>
+      <button onclick="removeImage()" disabled>Remove Image</button>
+    </div>
+  </body>
+</html>
