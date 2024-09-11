@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      var obj1 = {
+        name: "s1",
+        city: "c1",
+        display: function fn() {
+          console.log(this); //current Object (obj1)
+        },
+        print: () => {
+          console.log(this);
+        },
+      };
+
+      obj1.display();
+      obj1.print();
+    </script>
+  </head>
+  <body></body>
+</html>
