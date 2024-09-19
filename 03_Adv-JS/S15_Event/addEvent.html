@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fnHTML() {
+        alert("HTML is called");
+      }
+      function fnBody() {
+        alert("body is called");
+      }
+      function fnParent() {
+        alert("Parent Div is called");
+      }
+
+      function fnChild() {
+        alert("Child Div is called");
+      }
+
+      function fnButton() {
+        alert("button is called");
+      }
+
+      function addEvents() {
+        var buttonDom = document.getElementById("clickBtn");
+
+        var childDiv = document.getElementById("childDiv");
+
+        buttonDom.addEventListener("click", fnButton);
+
+        childDiv.addEventListener("click", fnChild);
+      }
+    </script>
+    <style>
+      body {
+        border: 6px solid blue;
+        padding: 30px;
+      }
+      .parent {
+        border: 4px solid red;
+        width: 800px;
+        padding: 30px;
+        height: 400px;
+      }
+      .child {
+        border: 2px solid green;
+        width: 500px;
+        padding: 20px;
+        height: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div id="childDiv" class="child">
+        <button id="clickBtn">Click Me</button>
+        <button onclick="addEvents()">Add Event</button>
+      </div>
+    </div>
+  </body>
+</html>

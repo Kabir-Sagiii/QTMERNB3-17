@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function f1(event) {
+        var h2DomElement = event.target;
+        h2DomElement.style.fontSize = "52px";
+      }
+
+      function f2() {
+        var h2DomElement = document.querySelector("h2");
+        h2DomElement.style.fontSize = "17px";
+      }
+
+      function changesStyle(event) {
+        console.log(event);
+        var buttonDomElement = event.target;
+        var h2DomElement = document.querySelector("h2");
+        h2DomElement.style.color = "red";
+
+        buttonDomElement.innerText = "Event Triggered";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2 onmouseenter="f1(event)" onmouseleave="f2()">Events in JS</h2>
+    <button onclick="changesStyle(event)">Click Me</button>
+  </body>
+</html>

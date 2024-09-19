@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function f2() {
+        alert("f2 is called");
+      }
+
+      function f1() {
+        alert("f1 is called");
+      }
+
+      function fnAdd() {
+        var thirdButton = document.getElementById("thirdButton");
+        var secondButton = document.getElementById("secondButton");
+
+        // thirdButton.addEventListener("click", function () {
+        //   alert("Third button triggered");
+        // });
+
+        thirdButton.addEventListener("click", f2);
+
+        thirdButton.addEventListener("mouseenter", function () {
+          document.querySelector("h2").style.color = "red";
+        });
+
+        // secondButton.removeEventListener("click");
+
+        // secondButton.style.color = "red";
+        // secondButton.removeEventListener("click");
+      }
+
+      function remove() {
+        var secondButton = document.getElementById("secondButton");
+        secondButton.style.color = "red";
+        secondButton.removeEventListener("click", f1, false);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>AddEventListener Concept</h2>
+    <button onclick="fnAdd()">Add Event Listener</button>
+    <button id="secondButton" onclick="f1()">With Event Listener</button>
+    <button id="thirdButton">Without Event Listener</button>
+    <button onclick="remove()">Remove</button>
+  </body>
+</html>
