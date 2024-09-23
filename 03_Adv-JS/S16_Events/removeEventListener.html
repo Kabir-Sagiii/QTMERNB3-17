@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function add() {
+        var btn = document.getElementById("style");
+
+        btn.addEventListener("click", changeStyle);
+        alert("EventListener added");
+      }
+
+      function fnRemove() {
+        var btn = document.getElementById("style");
+        btn.removeEventListener("click", changeStyle);
+        alert("removed event listener");
+      }
+
+      function changeStyle() {
+        // var h2DomElement = document.querySelector("h2");
+        // h2DomElement.style.color = "red";
+        alert("working");
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>RemoveEventListener</h2>
+    <button onclick="add()">Add</button>
+    <button onclick="fnRemove()">Remove</button>
+    <button id="style">change style</button>
+  </body>
+</html>

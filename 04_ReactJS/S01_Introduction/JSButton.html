@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Button</title>
+  </head>
+
+  <body>
+    <h2>JS Button</h2>
+    <script>
+      var btn = document.createElement("button");
+      btn.innerText = "JS Button";
+      function createOL() {
+        var ol = document.createElement("ol");
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+        var li3 = document.createElement("li");
+
+        li1.innerText = "Rohan";
+        li2.innerText = "Sneha";
+        li3.innerText = "Nikhil";
+
+        ol.append(li1);
+        ol.append(li2);
+        ol.append(li3);
+        document.querySelector("body").appendChild(ol);
+      }
+      document.querySelector("body").appendChild(btn);
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+    </script>
+  </body>
+</html>

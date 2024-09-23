@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function f2() {
+        alert("f2 is called");
+      }
+
+      function fnAdd() {
+        var secondButton = document.getElementById("secondButton");
+
+        secondButton.addEventListener("click", f2);
+      }
+
+      function remove() {
+        var secondButton = document.getElementById("secondButton");
+
+        secondButton.removeEventListener("click", f2);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>AddEventListener Concept</h2>
+    <button onclick="fnAdd()">Add Event Listener</button>
+
+    <button id="secondButton">Without Event Listener</button>
+
+    <button onclick="remove()">Remove</button>
+  </body>
+</html>
