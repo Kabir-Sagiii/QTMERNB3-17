@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./01_Task1.css" />
+    <!-- <style>
+      #container {
+        background-color: orangered;
+        padding: 50px;
+      }
+    </style> -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      var h2ReactElement = React.createElement(
+        "h2",
+        { id: "title", style: { color: "red", backgroundColor: "black" } },
+        "Task 1"
+      );
+
+      var divReactElement = React.createElement(
+        "div",
+        { id: "container" },
+        h2ReactElement
+      );
+
+      ReactDOM.render(divReactElement, document.getElementById("root"));
+    </script>
+  </body>
+</html>

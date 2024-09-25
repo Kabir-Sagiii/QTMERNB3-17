@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let pReactElement = React.createElement("p", null, "-----------");
+      let div2ReactElement = React.createElement("div", null, pReactElement);
+
+      var h2ReactElement = React.createElement("h2", null, "Task 1");
+      var div1ReactElement = React.createElement("div", null, h2ReactElement);
+
+      let mainDiv = React.createElement("div", null, [
+        div1ReactElement,
+        div2ReactElement,
+      ]);
+
+      ReactDOM.render(mainDiv, document.getElementById("root"));
+    </script>
+  </body>
+</html>
