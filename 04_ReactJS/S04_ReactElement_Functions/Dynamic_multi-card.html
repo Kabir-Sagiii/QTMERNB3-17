@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Card.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      function createCard(url, name) {
+        var image = React.createElement("img", {
+          src: url,
+          width: "100%",
+          height: "200",
+        });
+
+        var h2 = React.createElement("h2", null, name);
+
+        var p = React.createElement(
+          "p",
+          null,
+          "Versatile Software Engineer, who can develop any type of applications"
+        );
+
+        var button = React.createElement("button", null, "Profile Details");
+
+        let card = React.createElement("div", { id: "card" }, [
+          image,
+          h2,
+          p,
+          button,
+        ]);
+
+        return card;
+      }
+
+      //   let Container = React.createElement(
+      //     "div",
+      //     {
+      //       style: {
+      //         display: "flex",
+      //         justifyContent: "space-evenly",
+      //         margin: "30px",
+      //       },
+      //     },
+      //     [
+      //       createCard(
+      //         "https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d",
+      //         "Raj Verma"
+      //       ),
+      //       createCard(
+      //         "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1",
+      //         "Rohit Jiaswal"
+      //       ),
+      //       createCard(
+      //         "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg",
+      //         "Sid Patel"
+      //       ),
+      //     ]
+      //   );
+
+      function createContainer() {
+        return React.createElement("div", { className: "container" }, [
+          createCard(
+            "https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d",
+            "Raj Verma"
+          ),
+          createCard(
+            "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1",
+            "Rohit Jiaswal"
+          ),
+          createCard(
+            "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg",
+            "Sid Patel"
+          ),
+        ]);
+      }
+
+      ReactDOM.render(createContainer(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

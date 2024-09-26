@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #para {
+        color: red;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      let h2 = <h2> JSX h2 Element </h2>;
+
+      let p = (
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, nihil?
+        </p>
+      );
+
+      ReactDOM.render([h2, p, p, p], document.getElementById("root"));
+    </script>
+  </body>
+</html>

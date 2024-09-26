@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- <script>
+      var h2 = React.createElement("h2", null, "Siddharath Verma");
+
+      const div = React.createElement("div", null, [h2, h2, h2]);
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script> -->
+    <script>
+      function createH2(name) {
+        var h2 = React.createElement("h2", null, name);
+        return h2;
+      }
+
+      let div = React.createElement("div", null, [
+        createH2("Rohan"),
+        createH2("Riya"),
+        createH2("Raju"),
+      ]);
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>

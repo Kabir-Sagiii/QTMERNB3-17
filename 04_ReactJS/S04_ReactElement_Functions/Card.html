@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Card.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      var image = React.createElement("img", {
+        src: "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg",
+        width: "100%",
+        height: "200",
+      });
+      var h2 = React.createElement("h2", null, "Siddharath Verma");
+      var p = React.createElement(
+        "p",
+        null,
+        "Versatile Software Engineer, who can develop any type of applications"
+      );
+      var button = React.createElement("button", null, "Profile Details");
+      let card = React.createElement("div", { id: "card" }, [
+        image,
+        h2,
+        p,
+        button,
+      ]);
+
+      ReactDOM.render(card, document.getElementById("root"));
+    </script>
+  </body>
+</html>
