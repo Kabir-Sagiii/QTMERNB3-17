@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function CreateCard(props) {
+        //para = {name:"Anuj Sinha",url:""}
+        var divStyle = {
+          width: "230px",
+          boxShadow: "0 0 10px black",
+          textAlign: "center",
+          padding: "10px",
+        };
+
+        var card = (
+          <div style={divStyle}>
+            <img src={props.url} width="230" height="230" />
+            <h3> {props.name} </h3>
+          </div>
+        );
+
+        return card;
+      }
+
+      function App() {
+        return (
+          <div className="container">
+            <CreateCard
+              name="Anuj Sinha"
+              url="https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1"
+            />
+
+            <CreateCard name="Sid Patel" url="">
+              {" "}
+            </CreateCard>
+
+            <CreateCard name="Riya Sharma" url="" />
+
+            <CreateCard name="Ziya Khan" url="" />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
