@@ -1,0 +1,12 @@
+.container {
+  text-align: center;
+}
+
+.container > h2 {
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+.App {
+  padding: 50px;
+}
