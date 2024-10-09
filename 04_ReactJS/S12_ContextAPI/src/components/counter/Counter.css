@@ -1,0 +1,10 @@
+.counter {
+  margin-top: 100px;
+}
+.counter h2 {
+  margin: 20px 0px;
+  font-size: 52px;
+}
+.counter button {
+  padding: 7px 30px;
+}
