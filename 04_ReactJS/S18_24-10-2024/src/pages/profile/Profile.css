@@ -1,0 +1,37 @@
+.profileContainer {
+  width: 1000px;
+  height: 400px;
+  box-shadow: 0 0 10px black;
+  margin: 50px auto;
+  display: flex;
+}
+.leftPanel {
+  width: 30%;
+}
+.rightPanelLightTheme {
+  width: 70%;
+  padding: 30px;
+  background-color: white;
+  color: black;
+}
+.rightPanelLightTheme dd {
+  margin-bottom: 10px;
+}
+.rightPanelLightTheme button {
+  margin-right: 20px;
+  padding: 7px 20px;
+}
+
+.rightPanelDarkTheme {
+  width: 70%;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+.rightPanelDarkTheme dd {
+  margin-bottom: 10px;
+}
+.rightPanelDarkTheme button {
+  margin-right: 20px;
+  padding: 7px 20px;
+}
