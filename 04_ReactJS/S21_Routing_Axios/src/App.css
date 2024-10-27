@@ -1,0 +1,22 @@
+/* .container {
+  text-align: center;
+}
+
+.container > h2 {
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+.App {
+  padding: 50px;
+} */
+.loginContainer {
+  width: 500px;
+  text-align: center;
+  padding: 30px 100px;
+  margin: 100px auto;
+  box-shadow: 0 0 10px black;
+}
+.loginContainer div {
+  margin: 20px 0px;
+}
