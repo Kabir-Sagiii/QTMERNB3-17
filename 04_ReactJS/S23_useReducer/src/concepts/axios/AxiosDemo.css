@@ -1,0 +1,59 @@
+.tableContainer {
+  width: 800px;
+  margin: 30px auto;
+}
+thead {
+  color: green;
+  font-size: 19px;
+}
+.cardContainer {
+  width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  width: 270px;
+  padding: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0 10px green;
+  text-align: center;
+}
+
+.card h4 {
+  color: green;
+}
+#btn {
+  padding: 7px 30px;
+  color: green;
+  box-shadow: 0 0 10px black;
+  font-weight: bold;
+  font-size: 15px;
+}
+.card button {
+  padding: 7px 30px;
+  width: 200px;
+  border: 2px solid green;
+  color: green;
+}
+
+#addtocart {
+  border: 2px solid red;
+  color: red;
+}
+.bgImage {
+  height: 250px;
+  box-shadow: 0 0 10px black;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  filter: brightness(70%);
+}

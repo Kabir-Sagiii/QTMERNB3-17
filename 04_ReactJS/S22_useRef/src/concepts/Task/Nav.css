@@ -1,0 +1,49 @@
+.navContainer {
+  height: 75px;
+  background-color: black;
+  display: flex;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.left h2 {
+  font-size: 42px;
+  color: white;
+  font-family: cursive;
+}
+.center {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  width: 25%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right a,
+.center a {
+  color: white;
+  font-size: 19px;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.right button {
+  padding: 7px 30px;
+  background-color: black;
+  border: 2px solid red;
+  color: red;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 19px;
+}
+.right button:hover {
+  background-color: red;
+  color: white;
+}
