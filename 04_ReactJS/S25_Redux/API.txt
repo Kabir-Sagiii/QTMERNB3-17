@@ -1,0 +1,49 @@
+All Products
+-------------
+url : https://fakestoreapi.com/products
+
+Method Type : GET
+
+Data Format : [
+    { 
+                    id:1,
+                    title:'...',
+                    price:'...',
+                    category:'...',
+                    description:'...',
+                    image:'...',
+                    rating:{rate:---,count:--}
+                },{},{}... 20
+                ]
+
+
+
+All the Products
+http://localhost:3000/products
+
+
+
+wishlist
+http://localhost:3000/wishList
+
+electronics
+http://localhost:3000/electronics
+
+jewelery
+http://localhost:3000/jewelery
+
+mensclothing
+http://localhost:3000/mensclothing
+
+womensclothing
+http://localhost:3000/womensclothing
+
+
+AddtoCart - Post , Get
+-----------------
+http://localhost:3000/addToCart
+
+
+Remove Cart Product - delete
+--------------------
+http://localhost:3000/addToCart/<id>
